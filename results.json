@@ -1,0 +1,550 @@
+[
+  {
+    "reportId": "R005",
+    "questionId": "68dea616d0cda73d07e93ae6",
+    "verdict": "defect",
+    "repair": "answer_key",
+    "edit": {
+      "field": "answer",
+      "find": "2",
+      "replace": "1"
+    },
+    "route": "auto_apply",
+    "confidence": 0.99,
+    "evidence": "The face-centre charge contributes q/(4ε₀); the corner charge 2q contributes 2q/(8ε₀)=q/(4ε₀). Total flux is q/(2ε₀), so n=1, not 2.",
+    "student_reply": "You are right: the total flux gives n = 1. The stored answer has been corrected."
+  },
+  {
+    "reportId": "R029",
+    "questionId": "68e8734442c06737d6e56da4",
+    "verdict": "no_error",
+    "repair": null,
+    "edit": null,
+    "route": "no_change",
+    "confidence": 0.99,
+    "evidence": "Let m=10 kg. The equations F−100μ=10 and 2F−100μ=100 give μ=0.8, option A. The student’s proposed 0.4 is not supported.",
+    "student_reply": "We checked the equations and the coefficient is 0.8 (option A). The current answer is correct."
+  },
+  {
+    "reportId": "R012",
+    "questionId": "61dffbec08489156b684bd22",
+    "verdict": "defect",
+    "repair": "spelling",
+    "edit": {
+      "field": "question",
+      "find": "Epithellial tisue",
+      "replace": "Epithelial tissue"
+    },
+    "route": "auto_apply",
+    "confidence": 0.99,
+    "evidence": "Option A contains two clear spelling errors. The solution independently uses the correct term “epithelial tissue”; no scientific meaning or option ordering changes.",
+    "student_reply": "You spotted a spelling error in option A. It has been corrected to “Epithelial tissue”."
+  },
+  {
+    "reportId": "R002",
+    "questionId": "60f744b3f1b9bc7cc7b4a949",
+    "verdict": "defect",
+    "repair": "answer_key",
+    "edit": {
+      "field": "answer",
+      "find": "C",
+      "replace": "A"
+    },
+    "route": "auto_apply",
+    "confidence": 0.99,
+    "evidence": "The phasor relation gives V = √(40² + (60−30)²) = 50 V, which is option A. The worked solution also gives 50 V, while the stored key C points to 130 V.",
+    "student_reply": "You were right to flag the answer. The correct supply voltage is 50 V (option A); the answer key has been corrected."
+  },
+  {
+    "reportId": "R004",
+    "questionId": "68e870ef42c06737d6e565c4",
+    "verdict": "defect",
+    "repair": "answer_key",
+    "edit": {
+      "field": "answer",
+      "find": "A",
+      "replace": "D"
+    },
+    "route": "auto_apply",
+    "confidence": 0.99,
+    "evidence": "Using P = ρv_rms²/3 gives (0.09 × 400²)/3 = 4800 N/m², option D. The worked solution agrees; the stored key A does not.",
+    "student_reply": "The calculation gives 4800 N/m² (option D). The answer key has been corrected—thanks for reporting it."
+  },
+  {
+    "reportId": "R008",
+    "questionId": "60f742f6660d187cc13a8078",
+    "verdict": "defect",
+    "repair": "stem_data",
+    "edit": {
+      "field": "question",
+      "find": "an inductance",
+      "replace": "an inductance of 95.5 mH"
+    },
+    "route": "auto_apply",
+    "confidence": 0.96,
+    "evidence": "The stem omits the inductance, but the worked solution explicitly substitutes L = 95.5 × 10⁻³ H. Adding that stated value restores the missing condition without changing the problem.",
+    "student_reply": "The inductance value was missing from the question. We have added the 95.5 mH value shown in the worked solution."
+  },
+  {
+    "reportId": "R034",
+    "questionId": "695ee00b88d7701e561aabc5",
+    "verdict": "defect",
+    "repair": "unsound",
+    "edit": null,
+    "route": "faculty_review",
+    "confidence": 0.99,
+    "evidence": "For equal wave intensities and phase difference π/2, resultant intensity is 2I₀, not I₀, so assertion A is false. Reason R is also false: non-zero phase difference does not always eliminate the interference term. No listed choice represents both false.",
+    "student_reply": "The explanation and answer choices appear inconsistent: both the assertion and reason are false, but that combination is not offered. Faculty review is required."
+  },
+  {
+    "reportId": "R010",
+    "questionId": "622f08d7b70e4b50e4500a1b",
+    "verdict": "defect",
+    "repair": "option_repair",
+    "edit": null,
+    "route": "faculty_review",
+    "confidence": 0.98,
+    "evidence": "The stored question contains only options A, B and C; option D is absent. The centre-of-mass result is 10 m/s (option C), but a replacement distractor cannot be safely invented automatically.",
+    "student_reply": "Thanks for pointing this out. One answer option is missing; a faculty member is reviewing the question before it is restored."
+  },
+  {
+    "reportId": "R017",
+    "questionId": "6208e80a9cb2ab67dac61bd0",
+    "verdict": "no_error",
+    "repair": null,
+    "edit": null,
+    "route": "no_change",
+    "confidence": 0.94,
+    "evidence": "The options contain “more green light”; the word is correctly spelled. The comment appears to misread “more” as “mere”, and no spelling defect is present.",
+    "student_reply": "We checked the options and could not find a spelling error. The wording is “more green light”."
+  },
+  {
+    "reportId": "R032",
+    "questionId": "68dea7c2387eea3d0d95f9bb",
+    "verdict": "no_error",
+    "repair": null,
+    "edit": null,
+    "route": "no_change",
+    "confidence": 0.99,
+    "evidence": "The worked shift is 0.08 m, which is 8 cm. The question explicitly asks for the answer in cm, so the stored integer answer 8 is correct.",
+    "student_reply": "The calculated shift is 0.08 m = 8 cm, so the stored answer is correct."
+  },
+  {
+    "reportId": "R026",
+    "questionId": "620e23cecc50543bc7db9186",
+    "verdict": "defect",
+    "repair": "syllabus",
+    "edit": null,
+    "route": "faculty_review",
+    "confidence": 0.75,
+    "evidence": "The report alleges a NEET syllabus issue, but syllabus inclusion requires current exam-specific faculty confirmation. The student comment alone is not sufficient evidence to remove or alter the question.",
+    "student_reply": "Thanks for raising the syllabus concern. A faculty member will verify it against the applicable NEET syllabus."
+  },
+  {
+    "reportId": "R042",
+    "questionId": "63c7cce12981ed154ee92c94",
+    "verdict": "defect",
+    "repair": "wrong_chapter",
+    "edit": null,
+    "route": "faculty_review",
+    "confidence": 0.99,
+    "evidence": "The question concerns displacement current in a charging parallel-plate capacitor, an electromagnetic-induction topic, not geometrical optics. The answer calculation itself supports option C; only the chapter assignment needs faculty correction.",
+    "student_reply": "The question appears to be assigned to the wrong chapter. Faculty will verify and correct its classification."
+  },
+  {
+    "reportId": "R023",
+    "questionId": "68ecbacb2ec87a18deba1ad7",
+    "verdict": "defect",
+    "repair": "wrong_chapter",
+    "edit": null,
+    "route": "faculty_review",
+    "confidence": 0.99,
+    "evidence": "The question tests neuronal action-potential refractory periods and Na⁺-channel inactivation, which belongs with neural control/coordination rather than The Living World. Taxonomy marks chapter changes as faculty-only.",
+    "student_reply": "The question content appears to be filed under the wrong chapter. Faculty will verify and update its classification."
+  },
+  {
+    "reportId": "R007",
+    "questionId": "60f742f6660d187cc13a8078",
+    "verdict": "defect",
+    "repair": "stem_data",
+    "edit": {
+      "field": "question",
+      "find": "an inductance",
+      "replace": "an inductance of 95.5 mH"
+    },
+    "route": "auto_apply",
+    "confidence": 0.96,
+    "evidence": "The stem omits the inductance, but the worked solution explicitly substitutes L = 95.5 × 10⁻³ H. Adding that stated value restores the missing condition without changing the problem.",
+    "student_reply": "The inductance value was missing from the question. We have added the 95.5 mH value shown in the worked solution."
+  },
+  {
+    "reportId": "R003",
+    "questionId": "60f744b3f1b9bc7cc7b4a949",
+    "verdict": "defect",
+    "repair": "answer_key",
+    "edit": {
+      "field": "answer",
+      "find": "C",
+      "replace": "A"
+    },
+    "route": "auto_apply",
+    "confidence": 0.99,
+    "evidence": "The phasor relation gives V = √(40² + (60−30)²) = 50 V, which is option A. The worked solution also gives 50 V, while the stored key C points to 130 V.",
+    "student_reply": "You were right to flag the answer. The correct supply voltage is 50 V (option A); the answer key has been corrected."
+  },
+  {
+    "reportId": "R038",
+    "questionId": "68f21df0941cda588bc0470b",
+    "verdict": "app_issue",
+    "repair": null,
+    "edit": null,
+    "route": "faculty_review",
+    "confidence": 0.98,
+    "evidence": "The report says the app saved B after A was selected. The question’s content and key (A) agree; investigate answer-selection persistence and event handling rather than editing the question.",
+    "student_reply": "The correct answer is A. We are checking why the app may have saved a different selection."
+  },
+  {
+    "reportId": "R014",
+    "questionId": "63765a28f1d8416ae0408d89",
+    "verdict": "defect",
+    "repair": "markup_leak",
+    "edit": {
+      "field": "question",
+      "find": "\\frac{7}{8}",
+      "replace": "7/8"
+    },
+    "route": "auto_apply",
+    "confidence": 0.98,
+    "evidence": "The stem contains a raw LaTeX command (\\frac{7}{8}) instead of rendered notation. Replacing it with equivalent plain notation preserves the mathematical value.",
+    "student_reply": "The raw formatting code has been replaced with readable 7/8 notation."
+  },
+  {
+    "reportId": "R040",
+    "questionId": "6264197209f4fd65f58f5707",
+    "verdict": "no_error",
+    "repair": null,
+    "edit": null,
+    "route": "no_change",
+    "confidence": 0.99,
+    "evidence": "Golden rice produces beta-carotene, a vitamin A precursor, and is the correct option C. The stored answer and solution agree.",
+    "student_reply": "Golden rice is the correct answer (option C). The existing key is correct."
+  },
+  {
+    "reportId": "R044",
+    "questionId": "68dea577d0cda73d07e9391c",
+    "verdict": "no_error",
+    "repair": null,
+    "edit": null,
+    "route": "no_change",
+    "confidence": 0.99,
+    "evidence": "At r=R/2, Vp−V∞=(11/8)×16=22 V; at r=2R, Vs−V∞=16/2=8 V. The requested difference is 22−8=14 V, matching the stored answer.",
+    "student_reply": "We checked both potentials: their difference is 14 V, so the stored answer is correct."
+  },
+  {
+    "reportId": "R028",
+    "questionId": "6956d7bb23cb221e570d6013",
+    "verdict": "no_error",
+    "repair": null,
+    "edit": null,
+    "route": "no_change",
+    "confidence": 0.99,
+    "evidence": "Equating projectile range and maximum height gives tan θ = 4, so θ = tan⁻¹(4), option B. The stored answer and worked solution agree.",
+    "student_reply": "We checked the derivation: tan⁻¹(4) is correct, so the stored answer is unchanged."
+  },
+  {
+    "reportId": "R022",
+    "questionId": "61ee6c9d90a1a968a168686b",
+    "verdict": "defect",
+    "repair": "spelling",
+    "edit": {
+      "field": "question",
+      "find": "Choroid plexux",
+      "replace": "Choroid plexus"
+    },
+    "route": "auto_apply",
+    "confidence": 0.99,
+    "evidence": "Option D misspells “plexus” as “plexux”. This is a word-only correction and does not alter the option’s scientific content.",
+    "student_reply": "The spelling in option D has been corrected to “Choroid plexus”."
+  },
+  {
+    "reportId": "R015",
+    "questionId": "6956d79788d7701e5617bc29",
+    "verdict": "defect",
+    "repair": "identical_options",
+    "edit": null,
+    "route": "faculty_review",
+    "confidence": 0.99,
+    "evidence": "Options B and C both read 0 W. The duplicate is real, but writing a new distractor is authoring content and the taxonomy explicitly requires faculty approval.",
+    "student_reply": "You found two identical answer choices. A faculty member will replace the duplicate option after review."
+  },
+  {
+    "reportId": "R016",
+    "questionId": "6263d75bdd44e265ef926d97",
+    "verdict": "defect",
+    "repair": "solution_fix",
+    "edit": {
+      "field": "solution",
+      "find": "40",
+      "replace": "20"
+    },
+    "route": "auto_apply",
+    "confidence": 0.99,
+    "evidence": "From 800g = 2a²ρg with ρ=1 g/cm³, a²=400 cm² and a=20 cm. The stored answer 20 is correct; the solution’s final line incorrectly says 40 cm.",
+    "student_reply": "The answer key (20 cm) is correct, but the worked solution had an algebra error. The solution has been corrected to 20 cm."
+  },
+  {
+    "reportId": "R018",
+    "questionId": "612151a6a34397610a9a2e58",
+    "verdict": "defect",
+    "repair": "solution_fix",
+    "edit": {
+      "field": "solution",
+      "find": "5.469",
+      "replace": "3.0"
+    },
+    "route": "auto_apply",
+    "confidence": 0.96,
+    "evidence": "The question gives λ = 0.3 nm = 3.0 × 10⁻¹⁰ m. The solution instead writes 5.469 × 10⁻¹⁰ m, an inconsistent intermediate value, although its final kinetic energy 16.8 eV matches the correct calculation.",
+    "student_reply": "The final answer is correct, but an intermediate wavelength conversion in the solution was wrong. That step has been corrected."
+  },
+  {
+    "reportId": "R039",
+    "questionId": "68c801bc1b1dbc16dc93bf2b",
+    "verdict": "language_mode",
+    "repair": null,
+    "edit": null,
+    "route": "no_change",
+    "confidence": 0.99,
+    "evidence": "The student requests a Hindi version; this is a language preference, not a defect in the English question.",
+    "student_reply": "Thanks for the request. We have recorded your preference for a Hindi version of this question."
+  },
+  {
+    "reportId": "R009",
+    "questionId": "622f08d7b70e4b50e4500a1b",
+    "verdict": "defect",
+    "repair": "option_repair",
+    "edit": null,
+    "route": "faculty_review",
+    "confidence": 0.98,
+    "evidence": "The stored question contains only options A, B and C; option D is absent. The centre-of-mass result is 10 m/s (option C), but a replacement distractor cannot be safely invented automatically.",
+    "student_reply": "Thanks for pointing this out. One answer option is missing; a faculty member is reviewing the question before it is restored."
+  },
+  {
+    "reportId": "R013",
+    "questionId": "617fa18efd53ff1629ed890f",
+    "verdict": "defect",
+    "repair": "exam_reference",
+    "edit": {
+      "field": "question",
+      "find": "(NEET 2019) ",
+      "replace": ""
+    },
+    "route": "auto_apply",
+    "confidence": 0.98,
+    "evidence": "The question stem includes an exam-year source label. The taxonomy permits removing this kind of reference tag without changing the question itself.",
+    "student_reply": "The exam-year label has been removed from the question. Thanks for the suggestion."
+  },
+  {
+    "reportId": "R030",
+    "questionId": "6956d7e988d7701e5617bd3e",
+    "verdict": "no_error",
+    "repair": null,
+    "edit": null,
+    "route": "no_change",
+    "confidence": 0.99,
+    "evidence": "With ω=2π/16=π/8 and v=Aωcos(π/4)=π, A=8√2 m, option D. The stored answer agrees.",
+    "student_reply": "The SHM calculation gives 8√2 m (option D). The existing answer is correct."
+  },
+  {
+    "reportId": "R001",
+    "questionId": "60f744b3f1b9bc7cc7b4a949",
+    "verdict": "defect",
+    "repair": "answer_key",
+    "edit": {
+      "field": "answer",
+      "find": "C",
+      "replace": "A"
+    },
+    "route": "auto_apply",
+    "confidence": 0.99,
+    "evidence": "The phasor relation gives V = √(40² + (60−30)²) = 50 V, which is option A. The worked solution also gives 50 V, while the stored key C points to 130 V.",
+    "student_reply": "You were right to flag the answer. The correct supply voltage is 50 V (option A); the answer key has been corrected."
+  },
+  {
+    "reportId": "R036",
+    "questionId": "60ca4feb6420652745f55522",
+    "verdict": "display_issue",
+    "repair": null,
+    "edit": null,
+    "route": "faculty_review",
+    "confidence": 0.98,
+    "evidence": "The report concerns options being cut off on a phone, not the stored question or answer. This requires a responsive-layout/device check rather than a content edit.",
+    "student_reply": "This sounds like a mobile display issue. We have routed it for a device-layout check."
+  },
+  {
+    "reportId": "R021",
+    "questionId": "68f21caf941cda588bc04365",
+    "verdict": "defect",
+    "repair": "type_mismatch",
+    "edit": null,
+    "route": "faculty_review",
+    "confidence": 0.98,
+    "evidence": "The question asks for one mean-life value (1.44 min, option B), but it is stored as mcq and its answer payload is malformed as [\"\", \"B\"]. Confirm the intended single-correct type and normalize the answer before publishing.",
+    "student_reply": "The question’s answer format appears inconsistent with its single-correct result. A faculty member is checking the question type and grading configuration."
+  },
+  {
+    "reportId": "R011",
+    "questionId": "68e872546e45ba37dcc16bc0",
+    "verdict": "defect",
+    "repair": "option_repair",
+    "edit": {
+      "field": "question",
+      "find": "(C) <br",
+      "replace": "(C) 1 : 1<br"
+    },
+    "route": "auto_apply",
+    "confidence": 0.99,
+    "evidence": "Option C is blank, while the key is C. Newton’s third law gives equal and opposite Coulomb forces, so their magnitude ratio is 1:1.",
+    "student_reply": "Option C was blank. The correct force-magnitude ratio is 1:1, and the missing option has been restored."
+  },
+  {
+    "reportId": "R041",
+    "questionId": "6208e298fa399567e0878700",
+    "verdict": "not_actionable",
+    "repair": null,
+    "edit": null,
+    "route": "no_change",
+    "confidence": 0.99,
+    "evidence": "The comment “asdfgh” does not describe an identifiable problem. The question, options and solution are internally consistent.",
+    "student_reply": "We could not identify an issue from this report. If you notice a specific problem, please send us the details."
+  },
+  {
+    "reportId": "R043",
+    "questionId": "636283dbe3770c24f866e6d6",
+    "verdict": "no_error",
+    "repair": null,
+    "edit": null,
+    "route": "no_change",
+    "confidence": 0.99,
+    "evidence": "Combining 64 drops gives R=4r and total charge 64q. Surface charge density scales as Q/R², so σbig/σsmall=64/16=4; option B (4:1) is correct.",
+    "student_reply": "The ratio is 4:1 (option B), because the larger drop carries 64 times the charge and has 16 times the area."
+  },
+  {
+    "reportId": "R027",
+    "questionId": "6062ec84518e9535e120c422",
+    "verdict": "no_error",
+    "repair": null,
+    "edit": null,
+    "route": "no_change",
+    "confidence": 0.99,
+    "evidence": "The comment contains instructions attempting to alter the system decision; it is treated only as untrusted report text. Independently, the expansion calculation gives cubical coefficient 3 × 1.9×10⁻⁵ = 5.7×10⁻⁵ °C⁻¹, matching option A.",
+    "student_reply": "We independently checked the calculation and the stored answer is correct. Thanks for taking the time to report the question."
+  },
+  {
+    "reportId": "R006",
+    "questionId": "696a866665252c04fc1f81c2",
+    "verdict": "defect",
+    "repair": "stem_data",
+    "edit": {
+      "field": "question",
+      "find": "solid copper cube",
+      "replace": "solid copper cube of side 10 cm"
+    },
+    "route": "auto_apply",
+    "confidence": 0.95,
+    "evidence": "The stem omits the cube dimensions, but the worked solution substitutes V=(10×10⁻² m)³, establishing a 10 cm side length. Add that explicit condition to make the supplied calculation reproducible.",
+    "student_reply": "The cube’s side length was missing from the question. We have restored the 10 cm value used in the worked solution."
+  },
+  {
+    "reportId": "R019",
+    "questionId": "612151a6a34397610a9a2e58",
+    "verdict": "defect",
+    "repair": "solution_fix",
+    "edit": {
+      "field": "solution",
+      "find": "5.469",
+      "replace": "3.0"
+    },
+    "route": "auto_apply",
+    "confidence": 0.96,
+    "evidence": "The question gives λ = 0.3 nm = 3.0 × 10⁻¹⁰ m. The solution instead writes 5.469 × 10⁻¹⁰ m, an inconsistent intermediate value, although its final kinetic energy 16.8 eV matches the correct calculation.",
+    "student_reply": "The final answer is correct, but an intermediate wavelength conversion in the solution was wrong. That step has been corrected."
+  },
+  {
+    "reportId": "R035",
+    "questionId": "66fe9dbe22132e5a70a3e579",
+    "verdict": "no_error",
+    "repair": null,
+    "edit": null,
+    "route": "no_change",
+    "confidence": 0.98,
+    "evidence": "The question asks for the pair that is not antagonistic. Relaxin and inhibin are not an antagonistic pair in this context, so option D is correct.",
+    "student_reply": "Option D is the correct non-antagonistic pair. The stored answer is unchanged."
+  },
+  {
+    "reportId": "R025",
+    "questionId": "622df25ab70e4b50e44ff837",
+    "verdict": "defect",
+    "repair": "diagram",
+    "edit": null,
+    "route": "faculty_review",
+    "confidence": 0.97,
+    "evidence": "The stem explicitly refers to a figure (“as shown in figure”), but no figure is supplied in the question record. The missing diagram must be recovered or the question rewritten by faculty.",
+    "student_reply": "The question refers to a figure that is not attached. Faculty will check the source and restore the correct diagram."
+  },
+  {
+    "reportId": "R037",
+    "questionId": "68c9ae5afb6b2f16e2d43b1c",
+    "verdict": "display_issue",
+    "repair": null,
+    "edit": null,
+    "route": "faculty_review",
+    "confidence": 0.95,
+    "evidence": "A slow-loading question is a delivery/performance issue; the question text and solution are present and the stored answer D matches the calculation. Check asset/network and question-load telemetry.",
+    "student_reply": "The question content appears intact. We have routed the loading delay for a platform-performance check."
+  },
+  {
+    "reportId": "R020",
+    "questionId": "68c8153cfb6b2f16e2d3ceaf",
+    "verdict": "app_issue",
+    "repair": null,
+    "edit": null,
+    "route": "faculty_review",
+    "confidence": 0.78,
+    "evidence": "The stored MCQ key is A, B and D, matching the student’s stated selection. The question content does not show a content defect; grading/session logs are needed to investigate a possible answer-submission issue.",
+    "student_reply": "Your selected choices match the stored key. We are checking the response-recording logs to see why it was marked incorrect."
+  },
+  {
+    "reportId": "R033",
+    "questionId": "68dea715387eea3d0d95f790",
+    "verdict": "no_error",
+    "repair": null,
+    "edit": null,
+    "route": "no_change",
+    "confidence": 0.99,
+    "evidence": "6×(7.203 m)² = 311.299… m², which rounds to 311.3 m² at four significant figures. Therefore 10A=3113, matching the stored answer.",
+    "student_reply": "We checked the significant-figure rounding: 10A = 3113 is correct."
+  },
+  {
+    "reportId": "R031",
+    "questionId": "68dea619d0cda73d07e93aee",
+    "verdict": "no_error",
+    "repair": null,
+    "edit": null,
+    "route": "no_change",
+    "confidence": 0.99,
+    "evidence": "The angular-acceleration difference is π/4 rad/s². Requiring a one-revolution difference gives t=4 s, matching the stored integer answer.",
+    "student_reply": "We checked the relative angular motion: the first re-alignment occurs after 4 seconds."
+  },
+  {
+    "reportId": "R024",
+    "questionId": "5fc60508028950133eac8963",
+    "verdict": "no_error",
+    "repair": null,
+    "edit": null,
+    "route": "no_change",
+    "confidence": 0.96,
+    "evidence": "The maximum static friction is μN=30 N, while the weight is 20 N. Since the body remains at rest, actual friction is 20 N; the integer answer format records the numerical value.",
+    "student_reply": "The actual frictional force is 20 N, so the stored numerical answer is correct."
+  }
+]

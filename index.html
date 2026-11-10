@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#101b36" />
+  <title>Acadza | Report Triage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark"><span></span><span></span><span></span></div>
+        <div><div class="brand-name">acadza</div><div class="brand-sub">CONTENT INTELLIGENCE</div></div>
+      </div>
+      <div class="workspace-label">WORKSPACE</div>
+      <nav class="main-nav">
+        <button class="nav-item active" data-view="queue"><span class="nav-icon">▦</span> Review queue <span class="nav-count" id="nav-pending">44</span></button>
+        <button class="nav-item" data-view="overview"><span class="nav-icon">◫</span> Overview</button>
+        <button class="nav-item" data-view="audit"><span class="nav-icon">↳</span> Audit log</button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="safety-card">
+          <div class="safety-icon">✳</div>
+          <div><strong>Human-in-the-loop</strong><p>High-stakes and uncertain fixes stay with faculty.</p></div>
+        </div>
+        <div class="user-profile">
+          <div class="avatar">FA</div><div><strong>Faculty workspace</strong><span>Content operations</span></div><span class="online-dot"></span>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <div class="crumb"><span>Content operations</span><b>/</b><strong id="crumb-current">Review queue</strong></div>
+        <div class="top-actions">
+          <div class="data-pill"><span class="pulse"></span> Precomputed triage · no live LLM <span class="pill-divider"></span><span id="dataset-count">43 questions · 44 reports</span></div>
+          <button class="icon-button" id="help-button" title="About this workspace">?</button>
+        </div>
+      </header>
+
+      <section id="queue-view" class="view active-view">
+        <div class="page-heading">
+          <div><div class="eyebrow">REPORT → FIX</div><h1>Review queue</h1><p class="subheading">Triage student-reported content issues before they reach thousands of learners.</p></div>
+          <div class="heading-actions"><button class="button secondary" id="export-results">↓ Export results</button><button class="button primary" id="export-audit">Export audit log ↗</button></div>
+        </div>
+        <div class="stats-row">
+          <div class="stat-card"><div class="stat-label">Student reports <span class="stat-icon blue">▤</span></div><div class="stat-number" id="stat-reports">44</div><div class="stat-foot">Across <b>43 questions</b></div></div>
+          <div class="stat-card"><div class="stat-label">Faculty review <span class="stat-icon amber">◷</span></div><div class="stat-number" id="stat-review">10</div><div class="stat-foot"><span class="dot amber-dot"></span> Requires a human decision</div></div>
+          <div class="stat-card"><div class="stat-label">Safe auto-fix <span class="stat-icon green">✓</span></div><div class="stat-number" id="stat-auto">13</div><div class="stat-foot">Taxonomy-approved edits</div></div>
+          <div class="stat-card"><div class="stat-label">No content change <span class="stat-icon gray">—</span></div><div class="stat-number" id="stat-nochange">21</div><div class="stat-foot">Correct, preference or platform issue</div></div>
+        </div>
+        <div class="queue-toolbar">
+          <div class="toolbar-title"><h2>Incoming reports</h2><span class="count-chip" id="visible-count">44 reports</span></div>
+          <div class="toolbar-controls">
+            <div class="search-wrap"><span>⌕</span><input id="search-input" placeholder="Search question, chapter or report…" /></div>
+            <select id="verdict-filter" aria-label="Filter by verdict"><option value="">All verdicts</option></select>
+            <select id="route-filter" aria-label="Filter by route"><option value="">All routes</option><option value="faculty_review">Faculty review</option><option value="auto_apply">Auto-fix</option><option value="no_change">No change</option></select>
+          </div>
+        </div>
+        <div class="queue-layout">
+          <div class="queue-panel">
+            <div class="queue-panel-head"><span>QUESTION GROUP</span><span>REPORTS · PRIORITY</span></div>
+            <div id="queue-list" class="queue-list"></div>
+          </div>
+          <section class="detail-panel" id="detail-panel">
+            <div class="empty-detail"><div class="empty-illustration">◎</div><h3>Select a question to review</h3><p>Choose a group from the queue to inspect the original content, AI assessment and proposed repair.</p></div>
+          </section>
+        </div>
+      </section>
+
+      <section id="overview-view" class="view">
+        <div class="page-heading"><div><div class="eyebrow">SIGNAL & QUALITY</div><h1>Overview</h1><p class="subheading">A snapshot of report volume, risk and resolution decisions.</p></div></div>
+        <div class="overview-grid">
+          <div class="overview-card wide"><div class="card-head"><div><h2>Verdict distribution</h2><p>How the triage engine classified student reports</p></div><span class="mini-label">44 REPORTS</span></div><div id="verdict-bars" class="bars"></div></div>
+          <div class="overview-card"><div class="card-head"><div><h2>Routing decisions</h2><p>Safety-first workflow</p></div></div><div id="route-donut" class="donut-wrap"></div></div>
+          <div class="overview-card"><div class="card-head"><div><h2>Most reported questions</h2><p>Duplicate reports are grouped for faster review</p></div></div><div id="top-questions" class="top-list"></div></div>
+          <div class="overview-card"><div class="card-head"><div><h2>Subject mix</h2><p>Reports by subject area</p></div></div><div id="subject-bars" class="bars"></div></div>
+        </div>
+      </section>
+
+      <section id="audit-view" class="view">
+        <div class="page-heading"><div><div class="eyebrow">ACCOUNTABILITY</div><h1>Audit log</h1><p class="subheading">Every faculty decision is recorded locally with its timestamp and context.</p></div><div class="heading-actions"><button class="button primary" id="audit-download-2">Export audit log ↗</button></div></div>
+        <div class="audit-card"><div class="audit-card-head"><h2>Faculty activity</h2><span id="audit-count" class="count-chip">0 entries</span></div><div id="audit-list"></div></div>
+      </section>
+
+      <footer class="footer"><span>ACADZA CONTENT INTELLIGENCE</span><span>AI-assisted triage · Faculty remains in control</span></footer>
+    </main>
+  </div>
+  <div id="toast" class="toast" role="status"></div>
+  <div id="modal" class="modal hidden"><div class="modal-card"><button class="modal-close" id="modal-close">×</button><div class="eyebrow">ABOUT THIS WORKSPACE</div><h2>Designed for safe question repair</h2><p>This console loads the supplied 43-question and 44-report dataset with precomputed triage recommendations. It does not call a live LLM. Taxonomy rules determine which repairs may be auto-applied; ambiguous and high-risk cases remain in faculty review.</p><p>Faculty actions and audit entries are stored in this browser using local storage. Export the audit log before clearing browser data.</p><button class="button primary" id="modal-ok">Got it</button></div></div>
+  <script src="app.js"></script>
+</body>
+</html>

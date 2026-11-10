@@ -1,0 +1,14 @@
+{
+  "name": "acadza-report-fix",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Offline-first AI-assisted faculty console for Acadza question reports",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node tests/validate-data.js",
+    "triage": "node triage-engine.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
